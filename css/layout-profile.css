@@ -1,6 +1,6 @@
 * {
     margin:0; padding:0;
-  }
+}
 
 body {
     -webkit-touch-callout:none;
@@ -36,7 +36,7 @@ main {
     -webkit-user-drag: none;
     -khtml-user-drag: none;
     -webkit-touch-callout: none;
-    }
+}
 
 #wrapper nav {
     position: fixed;
