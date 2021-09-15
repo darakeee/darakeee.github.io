@@ -123,7 +123,7 @@ main {
     color: #fff;
 }
 
-.contact section#sec2 a{
+.contact section#sec2 a#alignment{
     display:inline-block;
     padding: 20px;
 	margin: 30px;
