@@ -126,3 +126,9 @@ footer{
     margin: 10px;
     color: #fff;
 }
+
+svg{
+    display: block;
+    text-align: center;
+    margin: 30px auto;
+}
