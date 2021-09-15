@@ -123,8 +123,12 @@ main {
     color: #fff;
 }
 
-svg{
-    display: block;
+a{
+    display:inline-block;
+    padding: 50px;
+	margin: 50px;
+}
+
+.contact section#sec2{
     text-align: center;
-    margin: 50px auto;
 }
