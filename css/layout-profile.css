@@ -36,7 +36,6 @@ main {
     -webkit-user-drag: none;
     -khtml-user-drag: none;
     -webkit-touch-callout: none;
-    pointer-events: none;
 }
 
 #wrapper nav {
