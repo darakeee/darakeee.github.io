@@ -119,14 +119,13 @@ main {
     font-size: 80px;
     font-family: Arial, sans-serif;
     text-align: center;
-    margin: 60px 0px 0px;
+    margin: 60px 0px 50px;
     color: #fff;
 }
 
-.contact section#sec2 a#alignment{
+.contact section#sec2 a.alignment{
     display:inline-block;
-    padding: 20px;
-	margin: 30px;
+    margin: 40px;
 }
 
 .contact section#sec2{
