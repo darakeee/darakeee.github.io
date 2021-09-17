@@ -1,5 +1,4 @@
 $(function(){
-<<<<<<< HEAD
     $("h1").textillate({
 		loop: false,
 		//フェードイン時のアニメーション
@@ -10,8 +9,6 @@ $(function(){
 		}
 	});
 
-=======
->>>>>>> 4a164d42127f3bb1234cf9bacbed0b54f56ea767
 	var click=true;
     $(".btn-navi").on("click", function(){
 		var rightVal = 0;
