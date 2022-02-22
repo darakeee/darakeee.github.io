@@ -1,9 +1,7 @@
 * {
-    margin:0;
-    padding:0;
+    margin:0; padding:0;
 }
 
-/*文字等をドラッグ、コピーできないようにする*/
 body {
     -webkit-touch-callout:none;
     -webkit-user-select:none;
@@ -29,7 +27,6 @@ main {
     flex: 1;
 }
 
-/*画像をドラッグ、長押しできないようにする*/
 .img-guard{
     user-select:none;
     -moz-user-select:none;
@@ -63,7 +60,6 @@ main {
     color: #ddd
 }
 
-/*メニューバー*/
 #wrapper .btn-navi {
     position: fixed;
     top: 20px;
@@ -99,7 +95,6 @@ main {
     top: 20px;
 }
 
-/*メニューバー(開いた状態)*/
 #wrapper .btn-navi.open {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
@@ -163,7 +158,6 @@ main {
     color: rgb(225, 220, 215);
 }
 
-/*画像を丸く表示*/
 .profile section#sec2 img{
     display: block;
     margin: 50px;

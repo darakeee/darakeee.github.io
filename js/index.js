@@ -1,14 +1,4 @@
 $(function(){
-    $("h1").textillate({
-		loop: false,
-		//フェードイン時のアニメーション
-		in: {
-			effect: "fadeInDown",
-			delay: 30,
-			
-		}
-	});
-
 	var click=true;
     $(".btn-navi").on("click", function(){
 		var rightVal = 0;
