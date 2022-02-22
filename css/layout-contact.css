@@ -1,7 +1,9 @@
 * {
-    margin:0; padding:0;
+    margin:0;
+    padding:0;
 }
 
+/*文字等をドラッグ、コピーできないようにする*/
 body {
     -webkit-touch-callout:none;
     -webkit-user-select:none;
@@ -49,6 +51,7 @@ main {
     color: #ddd
 }
 
+/*メニューバー*/
 #wrapper .btn-navi {
     position: fixed;
     top: 20px;
@@ -84,6 +87,7 @@ main {
     top: 20px;
 }
 
+/*メニューバー(開いた状態)*/
 #wrapper .btn-navi.open {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
@@ -123,6 +127,7 @@ main {
     color: #fff;
 }
 
+/*横に並べる*/
 .contact section#sec2 a.alignment{
     display:inline-block;
     margin: 40px;

@@ -1,14 +1,17 @@
 $(function(){
+<<<<<<< HEAD
     $("h1").textillate({
 		loop: false,
 		//フェードイン時のアニメーション
 		in: {
-			effect:'fadeInDown',
+			effect: "fadeInDown",
 			delay: 30,
 			
 		}
 	});
 
+=======
+>>>>>>> 4a164d42127f3bb1234cf9bacbed0b54f56ea767
 	var click=true;
     $(".btn-navi").on("click", function(){
 		var rightVal = 0;
@@ -23,7 +26,7 @@ $(function(){
 			}
 
 			click=false;
-			$("#global-navi").animate({'right':rightVal}, 500, function(){
+			$("#global-navi").animate({"right":rightVal}, 500, function(){
 				click=true;
 			});
 		}
