@@ -1,118 +1,137 @@
-body {
-    -webkit-touch-callout:none;
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    user-select:none;
-    display: flex;
-    flex-flow: column;
-    min-height: 100vh;
-    background: rgb(200, 180, 180);
+* {
+  margin: 0;
+  padding: 0;
 }
 
-footer{
-    background: rgb(200, 180, 180);
-    font-size: 15px;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 10px;
-    color: #fff
+* body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  min-height: 100vh;
+  background: #c8b4b4;
 }
 
-#wrapper nav {
-    position: fixed;
-    top: 0;
-    right: -300px;
-    width: 300px;
-    height: 100%;
-    padding-top: 50px;
-    background: rgba(80, 80, 80, 0.9);
-    font-size: 16px;
-    box-sizing: border-box;
-    z-index: 2;
+* footer {
+  background: #c8b4b4;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 10px;
+  color: #c8b4b4;
 }
 
-#wrapper nav ul li {
-    padding: 20px 28px
+* #wrapper nav {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  padding-top: 50px;
+  background: rgba(80, 80, 80, 0.9);
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 2;
 }
 
-#wrapper nav ul li a {
-    text-decoration: none;
-    color: #ddd
+* #wrapper nav ul li {
+  padding: 20px 28px;
 }
 
-#wrapper .btn-navi {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 30px;
-    height: 24px;
-    z-index: 3;
-    box-sizing: border-box;
-    cursor: pointer;
-    -webkit-transition: all 400ms;
-    transition: all 400ms;
+* #wrapper nav ul li a {
+  text-decoration: none;
+  color: #dddddd;
 }
 
-#wrapper .btn-navi span {
-    position: absolute;
-    width: 30px;
-    height: 4px;
-    background: #fff;
-    border-radius: 10px;
-    -webkit-transition: all 400ms;
-    transition: all 400ms;
+* #wrapper .btn-navi {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 24px;
+  z-index: 3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
 }
 
-#wrapper .btn-navi span:nth-child(1) {
-    top: 0px;
+* #wrapper .btn-navi span {
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background: white;
+  border-radius: 10px;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
 }
 
-#wrapper .btn-navi span:nth-child(2) {
-    top: 10px;
+* #wrapper .btn-navi span:nth-child(1) {
+  top: 0px;
 }
 
-#wrapper .btn-navi span:nth-child(3) {
-    top: 20px;
+* #wrapper .btn-navi span:nth-child(2) {
+  top: 10px;
 }
 
-#wrapper .btn-navi.open {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
+* #wrapper .btn-navi span:nth-child(3) {
+  top: 20px;
 }
 
-#wrapper .btn-navi.open span {
-    background: #fff;
+* #wrapper .btn-navi.open {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
-#wrapper .btn-navi.open span:nth-child(1) {
-    width: 24px;
-    -webkit-transform: translate(-7px,17px) rotate(45deg);
-    transform: translate(-7px,17px) rotate(45deg);
+* #wrapper .btn-navi.open span {
+  background: white;
 }
 
-#wrapper .btn-navi.open span:nth-child(3) {
-    width: 24px;
-    -webkit-transform: translate(-7px,-17px) rotate(-45deg);
-    transform: translate(-7px,-17px) rotate(-45deg);
+* #wrapper .btn-navi.open span:nth-child(1) {
+  width: 24px;
+  -webkit-transform: translate(-7px, 17px) rotate(45deg);
+  transform: translate(-7px, 17px) rotate(45deg);
 }
 
-#wrapper .welcome {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
+* #wrapper .btn-navi.open span:nth-child(3) {
+  width: 24px;
+  -webkit-transform: translate(-7px, -17px) rotate(-45deg);
+  transform: translate(-7px, -17px) rotate(-45deg);
 }
 
-.welcome h1 {
-    font-size: 100px;
-    font-family: Arial, sans-serif;
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
+* #wrapper .welcome {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
+
+* #wrapper .welcome h1 {
+  font-size: 100px;
+  font-family: Arial, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+/*# sourceMappingURL=layout.css.map */

@@ -1,0 +1,131 @@
+@import "fontPreset.scss";
+
+* {
+    margin:0; padding:0;
+    
+    body {
+        -webkit-touch-callout:none;
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        user-select:none;
+        display: flex;
+        flex-flow: column;
+        min-height: 100vh;
+        background: $backColor;
+    }
+    
+    footer{
+        background: $backColor;
+        font-size: 15px;
+        font-family: $fontStyle;
+        text-align: center;
+        margin: 10px;
+        color: $backColor;
+    }
+
+    main {
+        flex: 1;
+    }
+    
+    #wrapper{
+        nav {
+            position: fixed;
+            top: 0;
+            right: -300px;
+            width: 300px;
+            height: 100%;
+            padding-top: 50px;
+            background: $menuBackColor;
+            font-size: 16px;
+            box-sizing: border-box;
+            z-index: 2;
+            ul li {
+                padding: 20px 28px
+            }
+            ul li a{
+                text-decoration: none;
+                color:$menuOpenFontColor;
+            }
+        }
+    
+        //メニューバーが閉じている時
+        .btn-navi{
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 30px;
+            height: 24px;
+            z-index: 3;
+            box-sizing: border-box;
+            cursor: pointer;
+            -webkit-transition: all 400ms;
+            transition: all 400ms;
+    
+            span {
+                position: absolute;
+                width: 30px;
+                height: 4px;
+                background: $menuColor;
+                border-radius: 10px;
+                -webkit-transition: all 400ms;
+                transition: all 400ms;
+            }
+            span:nth-child(1) {
+                top: 0px;
+            }
+            span:nth-child(2) {
+                top: 10px;
+            }
+            span:nth-child(3) {
+                top: 20px;
+            }
+    
+        }
+    
+        //メニューバーが開いてるとき
+        .btn-navi.open {
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    
+            span {
+                background: $menuColor;
+            }
+            span:nth-child(1) {
+                width: 24px;
+                -webkit-transform: translate(-7px,17px) rotate(45deg);
+                transform: translate(-7px,17px) rotate(45deg);
+            }
+            span:nth-child(3) {
+                width: 24px;
+                -webkit-transform: translate(-7px,-17px) rotate(-45deg);
+                transform: translate(-7px,-17px) rotate(-45deg);
+            }
+        }
+    
+        .contact {
+            position: relative;
+            width: auto;
+            height: auto;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+
+            section#sec1 h2 {
+                font-size: 80px;
+                font-family: $fontStyle;
+                text-align: center;
+                margin: 60px 0px 50px;
+                color: $fontColor;
+            }
+            section#sec2{
+                text-align: center;
+            }
+            section#sec2 a.alignment{
+                display:inline-block;
+                margin: 40px;
+            }
+        }
+    }
+}
